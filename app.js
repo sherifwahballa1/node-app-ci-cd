@@ -11,6 +11,10 @@ app.get("/", (req, res) => {
   res.render("index", { name: "sherif" });
 });
 
+app.get("/about", (req, res) => {
+  res.render("about", { title: "Thanks god" });
+});
+
 app.listen(process.env.PORT || 3000, () => {
   console.log("Running okay");
 });
